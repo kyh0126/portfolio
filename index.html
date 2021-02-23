@@ -1,9 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <title>포토폴리오</title>
+  	<meta charset="utf-8" />
+  	<title>김영환's Portfolio</title>
+
+    <script  src="https://code.jquery.com/jquery-3.5.1.js"  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type = "text/css" href="css/common.css">
+    <link rel="stylesheet" type = "text/css" href="css/jquery.fullPage.css">
+    <script type="text/javascript" src = "js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src = "js/jquery.fullpage.extensions.min.js"></script>
   </head>
   <body>
-    포토폴리오
+    <div id="fullpage">
+    	<div class="section" id="section0"><h1>첫번째 섹션</h1></div>
+    	<div class="section" id="section1">
+    	    <div class="slide"><h1>첫번째 슬라이드</h1></div>
+    	    <div class="slide"><h1>두번째 슬라이드</h1></div>
+    	    <div class="slide"><h1>세번째 슬라이드</h1></div>
+    	    <div class="slide"><h1>네번째 슬라이드</h1></div>
+    	</div>
+    	<div class="section" id="section2"><h1>세번째 섹션</h1></div>
+    	<div class="section" id="section3"><h1>네번째 섹션</h1></div>
+    </div>
   </body>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        //options here
+        autoScrolling:true,
+        scrollHorizontally: true,
+        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+				sectionsColor: ['#4C4C4C', '#4C4C4C', '#4C4C4C', '#4C4C4C'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['First page', 'Second page', 'Third page', 'Last page']
+      });
+
+    //methods
+    $.fn.fullpage.setAllowScrolling(true);
+    });
+  </script>
 </html>
