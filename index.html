@@ -9,10 +9,31 @@
     <link rel="stylesheet" type = "text/css" href="css/jquery.fullPage.css">
     <script type="text/javascript" src = "js/jquery.fullPage.js"></script>
     <script type="text/javascript" src = "js/jquery.fullpage.extensions.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
   </head>
   <body>
     <div id="fullpage">
-    	<div class="section" id="section0"><h1>첫번째 섹션</h1></div>
+    	<div class="section" id="section0">
+        <video id="myVideo" loop muted data-autoplay>
+          <source src="img/firstSection.mp4" type="video/mp4">
+        </video>
+        <div class="bgGray"></div>
+        <div class = "me">
+          <div id="myProfileImg">
+            <img src="img/ProfileImg.jpg" alt="No Img"/>
+          </div>
+          <p id="name">Kim YeongHwan</p>
+          <p id="job">Web Developer</p>
+        </div>
+        <div class= "myContents">
+          <div id="mySNS">
+            <a aria-label="sendToMyEmail" href="mailto:kyh457869@icloud.com"><i class="myIcon far fa-envelope"></i><br>E-Mail</a>
+            <a aria-label="myInsta" target="_blank" href="https://www.instagram.com/y___eo_ng/"><i class="myIcon secondMyIcon fab fa-instagram"></i><br>Instagram</a>
+            <a aria-label="myBlog" target="_blank" href="https://kyh0126.tistory.com/"><i class="myIcon thirdMyIcon far fa-bookmark"></i><br>BLOG</a>
+            <a aria-label="myGithub" target="_blank" href="https://github.com/kyh0126"><i class="myIcon fab fa-github"></i><br>GitHub</a>
+          </div>
+        </div>
+      </div>
     	<div class="section" id="section1">
     	    <div class="slide"><h1>첫번째 슬라이드</h1></div>
     	    <div class="slide"><h1>두번째 슬라이드</h1></div>
@@ -26,7 +47,6 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $('#fullpage').fullpage({
-        //options here
         autoScrolling:true,
         scrollHorizontally: true,
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
@@ -36,8 +56,7 @@
 				navigationTooltips: ['First page', 'Second page', 'Third page', 'Last page']
       });
 
-    //methods
-    $.fn.fullpage.setAllowScrolling(true);
+      $.fn.fullpage.setAllowScrolling(true);
     });
   </script>
 </html>
