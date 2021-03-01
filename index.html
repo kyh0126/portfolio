@@ -7,6 +7,8 @@
     <script  src="https://code.jquery.com/jquery-3.5.1.js"  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type = "text/css" href="css/common.css">
     <link rel="stylesheet" type = "text/css" href="css/jquery.fullPage.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap" rel="stylesheet">
     <script type="text/javascript" src = "js/jquery.fullPage.js"></script>
     <script type="text/javascript" src = "js/jquery.fullpage.extensions.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
@@ -29,19 +31,30 @@
           <div id="mySNS">
             <a aria-label="sendToMyEmail" href="mailto:kyh457869@icloud.com"><i class="myIcon far fa-envelope"></i><br>E-Mail</a>
             <a aria-label="myInsta" target="_blank" href="https://www.instagram.com/y___eo_ng/"><i class="myIcon secondMyIcon fab fa-instagram"></i><br>Instagram</a>
-            <a aria-label="myBlog" target="_blank" href="https://kyh0126.tistory.com/"><i class="myIcon thirdMyIcon far fa-bookmark"></i><br>BLOG</a>
+            <a aria-label="myBlog" target="_blank" href="https://kyh0126.tistory.com/"><i class="myIcon thirdMyIcon far fa-bookmark"></i><br>Blog</a>
             <a aria-label="myGithub" target="_blank" href="https://github.com/kyh0126"><i class="myIcon fab fa-github"></i><br>GitHub</a>
           </div>
         </div>
+        <div class = "linkTo">
+          <div><a href ="#secondPage">About Me</a></div>
+          <div><a href ="#thirdPage">My Skills</a></div>
+          <div><a href ="#fourthPage">Projects</a></div>
+        </div>
       </div>
     	<div class="section" id="section1">
-    	    <div class="slide"><h1>첫번째 슬라이드</h1></div>
-    	    <div class="slide"><h1>두번째 슬라이드</h1></div>
-    	    <div class="slide"><h1>세번째 슬라이드</h1></div>
-    	    <div class="slide"><h1>네번째 슬라이드</h1></div>
-    	</div>
-    	<div class="section" id="section2"><h1>세번째 섹션</h1></div>
-    	<div class="section" id="section3"><h1>네번째 섹션</h1></div>
+        <h1>두번째 섹션</h1>
+        <div class="goToHome"><a href="#firstPage"><i class="far fa-arrow-alt-circle-up"></i></a></div>
+      </div>
+    	<div class="section" id="section2">
+        <h1>세번째 섹션</h1>
+        <div class="goToHome"><a href="#firstPage"><i class="far fa-arrow-alt-circle-up"></i></a></div>
+      </div>
+    	<div class="section" id="section3">
+        <div class="slide"><h1>첫번째 슬라이드</h1></div>
+        <div class="slide"><h1>두번째 슬라이드</h1></div>
+        <div class="slide"><h1>세번째 슬라이드</h1></div>
+        <div class="slide"><h1>네번째 슬라이드</h1></div>
+      </div>
     </div>
   </body>
   <script type="text/javascript">
@@ -50,7 +63,7 @@
         autoScrolling:true,
         scrollHorizontally: true,
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
-				sectionsColor: ['#4C4C4C', '#4C4C4C', '#4C4C4C', '#4C4C4C'],
+				sectionsColor: ['#ddd', '#ddd', '#ddd', '#ddd'],
 				navigation: true,
 				navigationPosition: 'right',
 				navigationTooltips: ['First page', 'Second page', 'Third page', 'Last page']

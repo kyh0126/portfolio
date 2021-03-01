@@ -5,11 +5,15 @@
 	padding:0;
 	text-align: center;
 	list-style:none;
+	font-family: 'Sunflower', sans-serif;
 }
 
 a{
-	color:black;
+	color:#32495e;
 	text-decoration:none;
+}
+p{
+	color:#32495e;
 }
 #myVideo{
 	position: absolute;
@@ -35,26 +39,20 @@ a{
 .me{
 	position: absolute;
 	z-index: 3;
-	width: 40%;
+	width: 50%;
     top: 15%;
 	left: 0;
 }
-.myContents{
-	position: absolute;
-	z-index: 3;
-	width:50%;
-	top: 10%;
-	left:50%;
-}
 #myProfileImg{
-	width: 280px;
-    height: 350px;
+	width: 40%;
 	display: block;
     margin: 0px auto;
+	margin-bottom: 5%;
 }
 #myProfileImg > img{
 	width:100%;
 	height:100%;
+	border-radius: 35%;
 }
 #name{
 	font-size: 50px;
@@ -62,16 +60,30 @@ a{
 #job{
 	font-size:35px;
 }
+.myContents{
+	position: absolute;
+	z-index: 3;
+	width:50%;
+	top: 15%;
+    left: 50%;
+}
 #mySNS{text-align: left;}
 #mySNS > a{
 	margin: 0px 2%;
 	display: inline-block;
 }
+#mySNS > a:hover{
+	color: #ddd;
+	
+}
+#mySNS > a:hover > .myIcon{
+	border: 3px solid #ddd;
+}
 .myIcon{
 	font-size: 80px;
-	padding: 10px;
+	padding: 15px;
     margin: 2px;
-	border: 3px solid black;
+	border: 3px solid #32495e;
     border-radius: 50%;
 }
 .secondMyIcon{
@@ -81,4 +93,25 @@ a{
 .thirdMyIcon{
 	padding: 10px 20px;
     margin: 2px;
+}
+.linkTo{
+	position: absolute;
+	z-index: 3;
+	width:50%;
+	top: 30%;
+    left: 50%;
+}
+.linkTo > div{
+	margin: 5% 2%;
+	font-size: 35px;
+    text-align: left;
+}
+.linkTo > div > a:hover{
+	color: #ddd;
+}
+.goToHome{
+	position: absolute;
+    font-size: 60px;
+    right: 30px;
+    bottom: 30px;
 }
