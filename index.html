@@ -29,13 +29,19 @@
         </div>
         <div class= "myContents">
           <div id="mySNS">
-            <a aria-label="sendToMyEmail" href="mailto:kyh457869@icloud.com"><i class="myIcon far fa-envelope"></i><br>E-Mail</a>
-            <a aria-label="myInsta" target="_blank" href="https://www.instagram.com/y___eo_ng/"><i class="myIcon secondMyIcon fab fa-instagram"></i><br>Instagram</a>
-            <a aria-label="myBlog" target="_blank" href="https://kyh0126.tistory.com/"><i class="myIcon thirdMyIcon far fa-bookmark"></i><br>Blog</a>
-            <a aria-label="myGithub" target="_blank" href="https://github.com/kyh0126"><i class="myIcon fab fa-github"></i><br>GitHub</a>
+            <a aria-label="sendToMyEmail" href="mailto:kyh457869@icloud.com"><i class="myIcon far fa-envelope"></i><br><p>E-Mail</p></a>
+            <a aria-label="myInsta" target="_blank" href="https://www.instagram.com/y___eo_ng/"><i class="myIcon secondMyIcon fab fa-instagram"></i><br><p>Instagram</p></a>
+            <a aria-label="myBlog" target="_blank" href="https://kyh0126.tistory.com/"><i class="myIcon thirdMyIcon far fa-bookmark"></i><br><p>Blog</p></a>
+            <a aria-label="myGithub" target="_blank" href="https://github.com/kyh0126"><i class="myIcon fab fa-github"></i><br><p></p>GitHub</p></a>
           </div>
         </div>
         <div class = "linkTo">
+          <div>
+            <li id ="vision"><a href="#">Vision</a></li>
+            <div id = "openBox">
+              <p>Contents</p>
+            </div>
+          </div>
           <div><a href ="#secondPage">About Me</a></div>
           <div><a href ="#thirdPage">My Skills</a></div>
           <div><a href ="#fourthPage">Projects</a></div>
@@ -54,6 +60,7 @@
         <div class="slide"><h1>두번째 슬라이드</h1></div>
         <div class="slide"><h1>세번째 슬라이드</h1></div>
         <div class="slide"><h1>네번째 슬라이드</h1></div>
+        <div class="goToHome" style="z-index:2"><a href="#firstPage"><i class="far fa-arrow-alt-circle-up"></i></a></div>
       </div>
     </div>
   </body>
@@ -68,8 +75,20 @@
 				navigationPosition: 'right',
 				navigationTooltips: ['First page', 'Second page', 'Third page', 'Last page']
       });
-
       $.fn.fullpage.setAllowScrolling(true);
+  
+      $("#vision > a").on('click', function (e) {
+        e.preventDefault();
+        $("#openBox").fadeToggle('fast');
+        if($("#vision > a").attr('data-click-state') == 1) {
+          $("#vision > a").css("color","#32495e");
+          $("#vision > a").attr('data-click-state', 0);
+          location.reload();
+        }else{
+          $("#vision > a").css("color","#ddd");
+          $("#vision > a").attr('data-click-state', 1);
+        }
+		  });
     });
   </script>
 </html>
