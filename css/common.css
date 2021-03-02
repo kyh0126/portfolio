@@ -93,24 +93,17 @@ canvas{
 .myIcon{
 	font-size: 80px;
 	padding: 15px;
-    margin: 2px;
 	border: 3px solid #ffffff;
     border-radius: 50%;
 }
 .secondMyIcon{
 	padding: 15px 20px;
-    margin: 2px;
 }
 .thirdMyIcon{
 	padding: 15px 25px;
-    margin: 2px;
 }
 .linkTo{
-	position: absolute;
-	z-index: 3;
 	width:50%;
-	top: 30%;
-    left: 50%;
 }
 .linkTo > div{
 	margin: 5% 2%;
@@ -145,4 +138,219 @@ canvas{
     font-size: 60px;
     right: 30px;
     bottom: 30px;
+}
+@media (max-width: 1145px){
+	.myIcon{
+		font-size: 60px;
+		padding: 15px;
+		border: 3px solid #ffffff;
+		border-radius: 50%;
+	}
+	.secondMyIcon{
+		padding: 15px 18.76px;
+	}
+	.thirdMyIcon{
+		padding: 15px 22.5px;
+	}
+}
+
+@media only screen and (max-width: 1024px) and (max-height: 1366px) {
+	.me{
+		width: 70%;
+		top: 5%;
+		left: 15%;
+	}
+	.myContents{
+    	top: 45%;
+    	left: 25%;
+	}
+	#mySNS {
+		text-align: center;
+	}
+	.linkTo{
+		margin: 5% auto;
+	}
+	.linkTo > div{
+		margin: 10% 2%;
+		font-size: 35px;
+		text-align: center;
+	}
+	.linkTo > div > li {
+		text-align: center;
+	}
+	#openBox > p {
+		text-align: center;
+		border-top: 2px solid;
+		border-bottom: 2px solid;
+		width: 75%;
+		margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 1024px) and (max-height: 1300px){
+	.myContents{
+		top:47%;
+	}
+}
+@media only screen and (max-width: 1024px) and (max-height: 1230px){
+	.myContents{
+		top: 50%;
+	}
+	.myIcon{
+		font-size: 40px;
+		padding: 15px;
+		border: 3px solid #ffffff;
+		border-radius: 50%;
+	}
+	.secondMyIcon{
+		padding: 15px 17.5px;
+	}
+	.thirdMyIcon{
+		padding: 15px 20px;
+	}
+}
+@media only screen and (max-width: 1024px) and (max-height: 1130px){
+	.me {
+		width: 60%;
+		top: 5%;
+		left: 20%;
+	}
+	.myContents{
+		top: 48%;
+	}
+}
+@media only screen and (max-width: 1024px) and (max-height: 1130px){
+	.me {
+		width: 60%;
+		top: 5%;
+		left: 20%;
+	}
+	.myContents{
+		top: 50%;
+	}
+}
+@media only screen and (max-width: 1024px) and (max-height: 1130px){
+	.me {
+		width: 40%;
+		top: 5%;
+		left: 30%;
+	}
+	.myContents {
+		top: 43%;
+	}
+}
+@media only screen and (max-width: 1024px) and (max-height: 900px){
+	.myContents {
+		top: 40%;
+	}
+	#myProfileImg {
+		margin: 0px auto;
+	}
+	#name {
+		font-size: 35px;
+	}
+	#job{
+		font-size: 20px;
+	}
+	
+}
+@media (max-width: 940px){
+	.myIcon{
+		font-size: 40px;
+		padding: 15px;
+		border: 3px solid #ffffff;
+		border-radius: 50%;
+	}
+	.secondMyIcon{
+		padding: 15px 17.5px;
+	}
+	.thirdMyIcon{
+		padding: 15px 20px;
+	}
+}
+@media (max-width: 779px){
+	.myContents{
+		top: 35%;
+	}
+	.myIcon{
+		font-size: 20px;
+		padding: 10px;
+		border: 3px solid #ffffff;
+		border-radius: 50%;
+	}
+	.secondMyIcon{
+		padding: 10px 11.25px;
+	}
+	.thirdMyIcon{
+		padding: 10px 12.5px;
+	}
+	.linkTo > div{
+		font-size: 30px;
+	}
+}
+@media (max-width: 620px){
+	#name {
+		font-size: 25px;
+	}
+	#job{
+		font-size: 15px;
+	}
+	.myContents{
+		top: 30%;
+	}
+	.myIcon {
+		font-size: 20px;
+		padding: 8px;
+		border: 2px solid rgb(255, 255, 255);
+		border-radius: 50%;
+	}
+	#mySNS > a:hover > .myIcon {
+		color: rgb(50, 73, 94);
+		background-color: rgb(255, 255, 255);
+		border: 2px solid rgb(50, 73, 94);
+	}
+	.secondMyIcon{
+		padding: 8px 9.25px;
+	}
+	.thirdMyIcon {
+		padding: 8px 10.5px;
+	}
+	#mySNS > a > p {
+		margin-top: 3%;
+		font-size: 10px;
+	}
+	.linkTo > div {
+		font-size: 25px;
+	}
+}
+@media (max-width: 360px){
+	.me{
+		width: 70%;
+		top: 5%;
+		left: 15%;
+	}
+	.myContents{
+    	top: 45%;
+    	left: 25%;
+	}
+	#mySNS {
+		text-align: center;
+	}
+	.linkTo{
+		margin: 5% auto;
+	}
+	.linkTo > div{
+		margin: 10% 2%;
+		font-size: 35px;
+		text-align: center;
+	}
+	.linkTo > div > li {
+		text-align: center;
+	}
+	#openBox > p {
+		text-align: center;
+		border-top: 2px solid;
+		border-bottom: 2px solid;
+		width: 75%;
+		margin: 0 auto;
+	}
 }
