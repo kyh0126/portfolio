@@ -12,14 +12,14 @@
     <script type="text/javascript" src = "js/jquery.fullPage.js"></script>
     <script type="text/javascript" src = "js/jquery.fullpage.extensions.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
   </head>
   <body>
     <div id="fullpage">
     	<div class="section" id="section0">
-        <video id="myVideo" loop muted data-autoplay>
-          <source src="img/firstSection.mp4" type="video/mp4">
-        </video>
-        <div class="bgGray"></div>
+        <div id="particles-js"></div>
+        <div class="bg"></div>
         <div class = "me">
           <div id="myProfileImg">
             <img src="img/ProfileImg.jpg" alt="No Img"/>
@@ -32,7 +32,7 @@
             <a aria-label="sendToMyEmail" href="mailto:kyh457869@icloud.com"><i class="myIcon far fa-envelope"></i><br><p>E-Mail</p></a>
             <a aria-label="myInsta" target="_blank" href="https://www.instagram.com/y___eo_ng/"><i class="myIcon secondMyIcon fab fa-instagram"></i><br><p>Instagram</p></a>
             <a aria-label="myBlog" target="_blank" href="https://kyh0126.tistory.com/"><i class="myIcon thirdMyIcon far fa-bookmark"></i><br><p>Blog</p></a>
-            <a aria-label="myGithub" target="_blank" href="https://github.com/kyh0126"><i class="myIcon fab fa-github"></i><br><p></p>GitHub</p></a>
+            <a aria-label="myGithub" target="_blank" href="https://github.com/kyh0126"><i class="myIcon fab fa-github"></i><br><p>GitHub</p></a>
           </div>
         </div>
         <div class = "linkTo">
@@ -64,13 +64,14 @@
       </div>
     </div>
   </body>
+  <script src="js/particlesCommon.js" type="text/javascript"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('#fullpage').fullpage({
         autoScrolling:true,
         scrollHorizontally: true,
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
-				sectionsColor: ['#ddd', '#ddd', '#ddd', '#ddd'],
+				sectionsColor: ['#424242', '#424242', '#424242', '#424242'],
 				navigation: true,
 				navigationPosition: 'right',
 				navigationTooltips: ['First page', 'Second page', 'Third page', 'Last page']
@@ -81,11 +82,12 @@
         e.preventDefault();
         $("#openBox").fadeToggle('fast');
         if($("#vision > a").attr('data-click-state') == 1) {
-          $("#vision > a").css("color","#32495e");
+          $("#vision > a").css("color","#ffffff");
           $("#vision > a").attr('data-click-state', 0);
           location.reload();
+
         }else{
-          $("#vision > a").css("color","#ddd");
+          $("#vision > a").css("color","#b5d5fa");
           $("#vision > a").attr('data-click-state', 1);
         }
 		  });
