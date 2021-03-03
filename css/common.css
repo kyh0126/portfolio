@@ -266,9 +266,11 @@ canvas{
 	}
 	#myProfileImg{
 		width: 30%;
+		margin-bottom: 0px;
 	}
 	.myContents{
 		width: 100%;
+		margin-top:2%;
 	}
 	#mySNS {
 		text-align: center;
@@ -291,6 +293,31 @@ canvas{
 		width: 75%;
 		margin: 0 auto;
 	}
+}
+@media only screen and (max-width: 959px) and (orientation: portrait) {
+	#myProfileImg {
+		width: 25%;
+		margin-bottom: 0px;
+	}
+	.myIcon{
+		font-size: 40px;
+		padding: 15px;
+		border: 3px solid #ffffff;
+		border-radius: 50%;
+	}
+	.secondMyIcon{
+		padding: 15px 17.5px;
+	}
+	.thirdMyIcon{
+		padding: 15px 20px;
+	}
+	#name{
+		font-size: 40px;
+	}
+	#job{
+		font-size:25px;
+	}
+	
 }
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
 	.me{
