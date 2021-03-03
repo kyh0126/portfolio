@@ -44,13 +44,17 @@ canvas{
 .me{
 	position: absolute;
 	z-index: 3;
-	width: 50%;
+	width: 100%;
     top: 15%;
 	left: 0;
 }
-#myProfileImg{
+.me::after{clear:both;content:"";display: block;}
+#profile{
 	width: 40%;
-	display: block;
+	float:left;
+}
+#myProfileImg{
+	width: 50%;
     margin: 0px auto;
 	margin-bottom: 5%;
 }
@@ -66,11 +70,8 @@ canvas{
 	font-size:35px;
 }
 .myContents{
-	position: absolute;
-	z-index: 3;
 	width:50%;
-	top: 15%;
-    left: 50%;
+	float:left;
 }
 #mySNS{text-align: left;}
 #mySNS > a{
@@ -104,6 +105,7 @@ canvas{
 }
 .linkTo{
 	width:50%;
+	margin-top: 10%;
 }
 .linkTo > div{
 	margin: 5% 2%;
@@ -139,7 +141,10 @@ canvas{
     right: 30px;
     bottom: 30px;
 }
-@media (max-width: 1145px){
+@media only screen and (max-width: 1145px) and (orientation: landscape){
+	.myContents{
+		margin-left: 5%;
+	}
 	.myIcon{
 		font-size: 60px;
 		padding: 15px;
@@ -152,185 +157,118 @@ canvas{
 	.thirdMyIcon{
 		padding: 15px 22.5px;
 	}
-}
-
-@media only screen and (max-width: 1024px) and (max-height: 1366px) {
-	.me{
-		width: 70%;
-		top: 5%;
-		left: 15%;
-	}
-	.myContents{
-    	top: 45%;
-    	left: 25%;
-	}
-	#mySNS {
-		text-align: center;
-	}
-	.linkTo{
-		margin: 5% auto;
-	}
-	.linkTo > div{
-		margin: 10% 2%;
-		font-size: 35px;
-		text-align: center;
-	}
-	.linkTo > div > li {
-		text-align: center;
-	}
-	#openBox > p {
-		text-align: center;
-		border-top: 2px solid;
-		border-bottom: 2px solid;
-		width: 75%;
-		margin: 0 auto;
-	}
-}
-@media only screen and (max-width: 1024px) and (max-height: 1300px){
-	.myContents{
-		top:47%;
-	}
-}
-@media only screen and (max-width: 1024px) and (max-height: 1230px){
-	.myContents{
-		top: 50%;
-	}
-	.myIcon{
+	#name{
 		font-size: 40px;
-		padding: 15px;
-		border: 3px solid #ffffff;
-		border-radius: 50%;
-	}
-	.secondMyIcon{
-		padding: 15px 17.5px;
-	}
-	.thirdMyIcon{
-		padding: 15px 20px;
-	}
-}
-@media only screen and (max-width: 1024px) and (max-height: 1130px){
-	.me {
-		width: 60%;
-		top: 5%;
-		left: 20%;
-	}
-	.myContents{
-		top: 48%;
-	}
-}
-@media only screen and (max-width: 1024px) and (max-height: 1130px){
-	.me {
-		width: 60%;
-		top: 5%;
-		left: 20%;
-	}
-	.myContents{
-		top: 50%;
-	}
-}
-@media only screen and (max-width: 1024px) and (max-height: 1130px){
-	.me {
-		width: 40%;
-		top: 5%;
-		left: 30%;
-	}
-	.myContents {
-		top: 43%;
-	}
-}
-@media only screen and (max-width: 1024px) and (max-height: 900px){
-	.myContents {
-		top: 40%;
-	}
-	#myProfileImg {
-		margin: 0px auto;
-	}
-	#name {
-		font-size: 35px;
 	}
 	#job{
-		font-size: 20px;
+		font-size:25px;
 	}
-	
 }
-@media (max-width: 940px){
+@media only screen and (max-width: 940px) and (orientation: landscape){
 	.myIcon{
-		font-size: 40px;
+		font-size: 50px;
 		padding: 15px;
 		border: 3px solid #ffffff;
 		border-radius: 50%;
 	}
 	.secondMyIcon{
-		padding: 15px 17.5px;
+		padding: 15px 18.13px;
 	}
 	.thirdMyIcon{
-		padding: 15px 20px;
-	}
-}
-@media (max-width: 779px){
-	.myContents{
-		top: 35%;
-	}
-	.myIcon{
-		font-size: 20px;
-		padding: 10px;
-		border: 3px solid #ffffff;
-		border-radius: 50%;
-	}
-	.secondMyIcon{
-		padding: 10px 11.25px;
-	}
-	.thirdMyIcon{
-		padding: 10px 12.5px;
+		padding: 15px 21.25px;
 	}
 	.linkTo > div{
-		font-size: 30px;
-	}
-}
-@media (max-width: 620px){
-	#name {
+		margin: 5% 2%;
 		font-size: 25px;
 	}
-	#job{
-		font-size: 15px;
-	}
-	.myContents{
-		top: 30%;
-	}
-	.myIcon {
-		font-size: 20px;
-		padding: 8px;
-		border: 2px solid rgb(255, 255, 255);
+}
+@media only screen and (max-width: 854px) and (orientation: landscape){
+	.myIcon{
+		font-size: 40px;
+		padding: 15px;
+		border: 3px solid #ffffff;
 		border-radius: 50%;
 	}
-	#mySNS > a:hover > .myIcon {
-		color: rgb(50, 73, 94);
-		background-color: rgb(255, 255, 255);
-		border: 2px solid rgb(50, 73, 94);
-	}
 	.secondMyIcon{
-		padding: 8px 9.25px;
+		padding: 15px 18.13px;
 	}
-	.thirdMyIcon {
-		padding: 8px 10.5px;
+	.thirdMyIcon{
+		padding: 15px 21.25px;
 	}
 	#mySNS > a > p {
-		margin-top: 3%;
-		font-size: 10px;
+		font-size: 15px;
 	}
-	.linkTo > div {
+	.linkTo > div{
+		margin: 5% 2%;
 		font-size: 25px;
 	}
 }
-@media (max-width: 360px){
+@media only screen and (max-width: 757px) and (orientation: landscape){
+	#name{
+		font-size: 30px;
+	}
+	#job{
+		font-size:15px;
+	}
+	.myIcon{
+		font-size: 30px;
+		padding: 15px;
+		border: 2px solid #ffffff;
+		border-radius: 50%;
+	}
+	.secondMyIcon{
+		padding: 15px 16.89px;
+	}
+	.thirdMyIcon{
+		padding: 15px 18.76px;
+	}
+	.linkTo > div{
+		margin: 5% 2%;
+		font-size: 25px;
+	}
+}
+@media only screen and (max-width: 638px) and (orientation: landscape){
+	.linkTo{
+		margin:0;
+	}
+	#mySNS{
+		position: fixed;
+		bottom: 10%;
+		left: 0px;
+		width: 100%;
+		text-align: center;
+	}
+	.myIcon{
+		font-size: 30px;
+		padding: 15px;
+		border: 2px solid #ffffff;
+		border-radius: 50%;
+	}
+	.secondMyIcon{
+		padding: 15px 16.89px;
+	}
+	.thirdMyIcon{
+		padding: 15px 18.76px;
+	}
+	.linkTo > div{
+		margin: 5% 2%;
+		font-size: 25px;
+	}
+}
+@media only screen and (orientation: portrait) {
 	.me{
-		width: 70%;
+		width: 100%;
 		top: 5%;
-		left: 15%;
+		left: 0px;
+	}
+	#profile {
+		width: 100%;
+	}
+	#myProfileImg{
+		width: 30%;
 	}
 	.myContents{
-    	top: 45%;
-    	left: 25%;
+		width: 100%;
 	}
 	#mySNS {
 		text-align: center;
@@ -339,7 +277,7 @@ canvas{
 		margin: 5% auto;
 	}
 	.linkTo > div{
-		margin: 10% 2%;
+		margin: 5% 2%;
 		font-size: 35px;
 		text-align: center;
 	}
@@ -354,3 +292,67 @@ canvas{
 		margin: 0 auto;
 	}
 }
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+	.me{
+		width: 100%;
+		top: 5%;
+		left: 0px;
+	}
+	.myContents{
+		width: 100%;
+	}
+	#mySNS {
+		text-align: center;
+	}
+	.linkTo{
+		margin: 5% auto;
+	}
+	.linkTo > div{
+		margin: 5% 2%;
+		font-size: 35px;
+		text-align: center;
+	}
+	.linkTo > div > li {
+		text-align: center;
+	}
+	#openBox > p {
+		text-align: center;
+		border-top: 2px solid;
+		border-bottom: 2px solid;
+		width: 75%;
+		margin: 0 auto;
+	}
+}
+@media only screen and (min-device-width: 280px) and (max-device-width:540px) and (orientation: portrait){
+	.me{
+		width: 100%;
+		top: 5%;
+		left: 0px;
+	}
+	.myContents{
+		width: 100%;
+		margin-top:5%;
+	}
+	#mySNS {
+		text-align: center;
+	}
+	.linkTo{
+		margin: 5% auto;
+	}
+	.linkTo > div{
+		margin: 10% 2%;
+		font-size: 40px;
+		text-align: center;
+	}
+	.linkTo > div > li {
+		text-align: center;
+	}
+	#openBox > p {
+		text-align: center;
+		border-top: 2px solid;
+		border-bottom: 2px solid;
+		width: 75%;
+		margin: 0 auto;
+	}
+}
+
