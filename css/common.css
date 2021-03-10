@@ -160,7 +160,9 @@ canvas{
 	margin: 0 auto;
 	background-color: #ffffff;
 	border-radius: 25px;
+	overflow: hidden;
 }
+.contentsBodyDiv::after{clear:both;content:"";display: block;}
 .contentsBodyDiv > p{
 	color: black;
 	text-align: left;
@@ -180,6 +182,85 @@ canvas{
 	margin-bottom: 1vh;
 	border-bottom:2px solid #32495e;
 }
+#subTitleP2{
+	width: 40vw;
+	font-size: 3vh;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	border-bottom:2px solid #32495e;
+	color:black;
+	text-align: left;
+}
+#skillDiv{
+	width:40vw;
+	height: 450px;
+	margin-left: 4vw;
+	float:left;
+}
+#Skills > tr > td > p{
+	color:black;
+}
+#firstLine > td{
+	width: 10vw;
+}
+#firstLine > td > img{
+	width:8vw;
+	box-shadow: 0 4px 8px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2);
+	border-radius: 10px;
+}
+#secondLine > td > p{
+	color:black;
+}
+#myProject{
+	width:80%;
+	height: 80vh;
+	margin: 0 auto;
+}
+#myProject::after{clear:both;content:"";display: block;}
+#leftC{
+	width: 49%;
+    height: 70vh;
+    margin-top: 5vh;
+    border-right: 3px solid #32495e;
+	float:left;
+}
+#rightC{
+	width: 50%;
+    height: 70vh;
+    margin-top: 5vh;
+	float:left;
+}
+#projectImg{
+	width:30vw;
+	margin-top:20%;
+	margin-right:20%;
+}
+#projectImg > img{
+	width:100%;
+	height:100%;
+}
+#projectContents{
+	width: 30vw;
+	margin-top:20%;
+	margin-left:20%;
+}
+#projectContents > p{
+	color:black;
+	text-align: left;
+	font-size: 1.4vw;
+}
+#projectContents > p > a{
+	border: 2px solid black;
+	padding: 4px 3px;
+	border-radius: 8px;
+	color:black;
+}
+#projectContents > p > a:hover{
+	border: 2px solid cornflowerblue;
+	color:cornflowerblue;
+}
+
+
 @media only screen and (max-width: 1145px) and (orientation: landscape){
 	.myContents{
 		margin-left: 5%;
@@ -331,6 +412,32 @@ canvas{
 		border-bottom: 2px solid;
 		width: 75%;
 		margin: 0 auto;
+	}
+	#leftC{
+		width: 100%;
+		height: 30vh;
+		margin-top: 5vh;
+		border-bottom: 3px solid #32495e;
+		border-right: none;
+		float:none;
+	}
+	#projectImg {
+		width: 70vw;
+		margin: 20% auto;
+	}
+	#rightC{
+		width: 100%;
+		height: 30vh;
+		margin-top: 0;
+		float:none;
+	}
+	#projectContents {
+		width: 75vw;
+		margin: 15% auto;
+	}
+	#projectContents > p {
+		text-align: center;
+		font-size: 2.4vw;
 	}
 }
 @media only screen and (max-width: 959px) and (orientation: portrait) {
