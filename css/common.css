@@ -167,7 +167,8 @@ canvas{
 	color: black;
 	text-align: left;
 	margin: 0 4%;
-	font-size: 3vh;
+	font-size: 2vw;
+    font-weight: lighter;
 }
 #titleP{
 	font-size: 5vh;
@@ -177,7 +178,8 @@ canvas{
 }
 #subTitleP{
 	width: 50vw;
-	font-size: 4vh;
+	font-size: 2.5vw;
+	font-weight: 900;
 	margin-top: 1vh;
 	margin-bottom: 1vh;
 	border-bottom:2px solid #32495e;
