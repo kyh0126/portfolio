@@ -104,7 +104,6 @@ canvas{
 	padding: 15px 25px;
 }
 .linkTo{
-	width:50%;
 	margin-top: 10%;
 }
 .linkTo > div{
@@ -133,7 +132,7 @@ canvas{
 	text-align: left;
     border-top: 2px solid;
     border-bottom: 2px solid;
-    width: 75%;
+	padding: 1% 0px;
 }
 .goToHome{
 	position: absolute;
@@ -195,7 +194,7 @@ canvas{
 }
 #skillDiv{
 	width:40vw;
-	height: 450px;
+	height: 50%;
 	margin-left: 4vw;
 	float:left;
 }
@@ -412,8 +411,9 @@ canvas{
 		text-align: center;
 		border-top: 2px solid;
 		border-bottom: 2px solid;
-		width: 75%;
+		width:85%;
 		margin: 0 auto;
+		padding: 2% 0px;
 	}
 	#leftC{
 		width: 100%;
@@ -494,7 +494,6 @@ canvas{
 		text-align: center;
 		border-top: 2px solid;
 		border-bottom: 2px solid;
-		width: 75%;
 		margin: 0 auto;
 	}
 }
@@ -515,7 +514,7 @@ canvas{
 		margin: 5% auto;
 	}
 	.linkTo > div{
-		margin: 10% 2%;
+		margin: 5% 2%;
 		font-size: 40px;
 		text-align: center;
 	}
@@ -526,7 +525,6 @@ canvas{
 		text-align: center;
 		border-top: 2px solid;
 		border-bottom: 2px solid;
-		width: 75%;
 		margin: 0 auto;
 	}
 }
