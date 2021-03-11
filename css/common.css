@@ -96,6 +96,7 @@ canvas{
 	padding: 15px;
 	border: 3px solid #ffffff;
     border-radius: 50%;
+	transition: all .2s;
 }
 .secondMyIcon{
 	padding: 15px 20px;
@@ -400,7 +401,7 @@ canvas{
 		margin: 5% auto;
 	}
 	.linkTo > div{
-		margin: 5% 2%;
+		margin: 2% 2%;
 		font-size: 35px;
 		text-align: center;
 	}
@@ -483,7 +484,7 @@ canvas{
 		margin: 5% auto;
 	}
 	.linkTo > div{
-		margin: 5% 2%;
+		margin: 2% 2%;
 		font-size: 35px;
 		text-align: center;
 	}
