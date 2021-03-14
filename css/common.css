@@ -492,10 +492,10 @@ canvas{
 		padding: 15px 20px;
 	}
 	#name{
-		font-size: 10vw;
+		font-size: 50px;
 	}
 	#job{
-		font-size:5.5vw;
+		font-size:30px;
 	}
 	
 }
