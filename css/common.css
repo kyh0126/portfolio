@@ -415,6 +415,7 @@ canvas{
 		width:85%;
 		margin: 0 auto;
 		padding: 2% 0px;
+		font-size: 30px;
 	}
 	#leftC{
 		width: 100%;
@@ -425,8 +426,8 @@ canvas{
 		float:none;
 	}
 	#projectImg {
-		width: 70vw;
-		margin: 20% auto;
+		width: 50vw;
+		margin: 2vh auto;
 	}
 	#rightC{
 		width: 100%;
@@ -442,31 +443,6 @@ canvas{
 		text-align: center;
 		font-size: 2.4vw;
 	}
-}
-@media only screen and (max-width: 959px) and (orientation: portrait) {
-	#myProfileImg {
-		width: 25%;
-		margin-bottom: 0px;
-	}
-	.myIcon{
-		font-size: 40px;
-		padding: 15px;
-		border: 3px solid #ffffff;
-		border-radius: 50%;
-	}
-	.secondMyIcon{
-		padding: 15px 17.5px;
-	}
-	.thirdMyIcon{
-		padding: 15px 20px;
-	}
-	#name{
-		font-size: 40px;
-	}
-	#job{
-		font-size:25px;
-	}
-	
 }
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
 	.me{
@@ -498,6 +474,31 @@ canvas{
 		margin: 0 auto;
 	}
 }
+@media only screen and (max-width: 959px) and (orientation: portrait) {
+	#myProfileImg {
+		width: 25%;
+		margin-bottom: 0px;
+	}
+	.myIcon{
+		font-size: 5vw;
+		padding: 15px;
+		border: 3px solid #ffffff;
+		border-radius: 50%;
+	}
+	.secondMyIcon{
+		padding: 15px 17.5px;
+	}
+	.thirdMyIcon{
+		padding: 15px 20px;
+	}
+	#name{
+		font-size: 10vw;
+	}
+	#job{
+		font-size:5.5vw;
+	}
+	
+}
 @media only screen and (min-device-width: 280px) and (max-device-width:540px) and (orientation: portrait){
 	.me{
 		width: 100%;
@@ -508,21 +509,36 @@ canvas{
 		width: 100%;
 		margin-top:5%;
 	}
+	.myIcon {
+		font-size: 5vw;
+		padding: 2vw;
+	}
+	.secondMyIcon{
+		padding: 2vw 2.31vw;
+	}
+	.thirdMyIcon{
+		padding: 2vw 2.63vw;
+	}
 	#mySNS {
 		text-align: center;
+	}
+	#mySNS > a > p {
+		font-size: 5vw;
 	}
 	.linkTo{
 		margin: 5% auto;
 	}
 	.linkTo > div{
 		margin: 5% 2%;
-		font-size: 40px;
+		font-size: 8vw;
 		text-align: center;
 	}
 	.linkTo > div > li {
+		font-size: 8vw;
 		text-align: center;
 	}
 	#openBox > p {
+		font-size: 5vw;
 		text-align: center;
 		border-top: 2px solid;
 		border-bottom: 2px solid;
